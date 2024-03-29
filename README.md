@@ -41,3 +41,8 @@ THEN I am presented with a link to the developer's portfolio.
 ## Link to finished product
 
 ## Screenshot of deployed website
+![main_light](https://github.com/stephdilolle/blog/assets/161002107/9ff1c3b3-0e31-4cab-8997-8773d3113337)
+![main_dark](https://github.com/stephdilolle/blog/assets/161002107/76fdc0a0-84c3-4fb5-8642-0799ae35ad71)
+![blog_light](https://github.com/stephdilolle/blog/assets/161002107/2126eb76-4ad5-4ec5-94a3-a3b38a26cade)
+![blog_dark](https://github.com/stephdilolle/blog/assets/161002107/46b9a49c-3ffa-4d23-801b-0d5630d8b3d7)
+
