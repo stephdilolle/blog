@@ -41,3 +41,7 @@ THEN I am presented with a link to the developer's portfolio.
 ## Link to finished product
 
 ## Screenshot of deployed website
+C:\Users\itali\Desktop\bootcamp\blog\assets\blog_dark.PNG
+C:\Users\itali\Desktop\bootcamp\blog\assets\blog_light.PNG
+C:\Users\itali\Desktop\bootcamp\blog\assets\main_dark.PNG
+C:\Users\itali\Desktop\bootcamp\blog\assets\main_light.PNG
