@@ -11,7 +11,6 @@ body {
     color: pink;
   }
 
-  
 .switch {
     position: relative;
     display: inline-block;
@@ -55,3 +54,13 @@ body {
     background-color: #333;
     color: #333;
   }
+
+  footer {
+    background-color: white;
+    color: pink;
+    text-align: center;
+    padding: 15px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
