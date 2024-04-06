@@ -16,14 +16,3 @@ To use the web page, the user will type in their username, a title, and a blog p
 ## Credits
 
 Credits to jQuery UI and Bootstrap libraries.
-
-## License
-
-MIT license
-
-## Features
-
-Light/dark toggle, interactive blog post form, display of blog posts.
-
-## Link to finished product
-https://stephdilolle.github.io/blog/
