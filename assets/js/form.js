@@ -6,31 +6,30 @@ modeToggle.addEventListener('change', () => {
     body.classList.toggle('dark-mode');
 });
 
+const form = document.getElementById('blogForm');
+const submitButton = document.getElementById('submitButton');
 
-// Loop through the form data and save each entry in local storage
-for (let i = 1; i <= 5; i++) {
-    const username = form.elements[`username${i}`].value;
-    const title = form.elements[`title${i}`].value;
-    const content = form.elements[`content${i}`].value;
+submitButton.addEventListener('click', function(event) {
+    event.preventDefault(); // Prevent form submission
 
-    // Create an object with the form data
+    // Get the current form data
+    const username = document.getElementById('username').value;
+    const title = document.getElementById('title').value;
+    const content = document.getElementById('content').value;
+
+    // Store the form data in localStorage
     const formData = {
         username: username,
         title: title,
         content: content
     };
-
-    // Convert the object to a string
     const formDataString = JSON.stringify(formData);
 
-    // Save the stringified object to local storage with a dynamic key
-    localStorage.setItem(`formData${i}`, formDataString);
+    // Loop to store form data for multiple entries
+    for (let i = 0; i <= 5; i++) {
+        localStorage.setItem(`formData${i}`, formDataString);
+    }
+
+    // Redirect the user to blog.html after storing form data
     window.location.href = 'blog.html';
-}
-
-
-    // Submit button goes to blog page
-    document.getElementById("submitButton").addEventListener("click", function(event) {
-        event.preventDefault();
-        window.location.href = "blog.html";
-    });
+});

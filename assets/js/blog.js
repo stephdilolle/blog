@@ -10,25 +10,16 @@ modeToggle.addEventListener('change', () => {
 document.getElementById("aboutButton").addEventListener("click", function() {
     window.location.href = "index.html";
       });
-// Pull and display data from localStorage
-// Retrieve the stringified object from localStorage
-const formDataString = localStorage.getItem('formData');
-const formData = JSON.parse(formDataString);
-
-const username = formData.username;
-const formDataTitle = formData.title;
-const formDataContent = formData.content;
-
-// Update the content of the cards with the retrieved data
+      
+// Loop through localStorage to retrieve and display stored data in the card elements
 for (let i = 1; i <= 5; i++) {
-    const title = localStorage.getItem(`title${i}`);
-    const body = localStorage.getItem(`body${i}`);
+    const storedData = localStorage.getItem(`formData${i}`);
 
-    const titleElement = document.getElementById(`title${i}`);
-    const bodyElement = document.getElementById(`body${i}`);
+    if (storedData) {
+        const formData = JSON.parse(storedData);
 
-    if (titleElement && bodyElement) {
-        titleElement.textContent = title || 'Default Title';
-        bodyElement.textContent = body || 'Default Content';
+        // Update the title and body content of each card based on the stored data
+        document.getElementById(`title${i}`).textContent = formData.title;
+        document.getElementById(`body${i}`).textContent = formData.content;
     }
 }
